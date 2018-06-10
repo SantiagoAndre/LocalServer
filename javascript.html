@@ -1,0 +1,61 @@
+
+<meta http-equiv="Content-Type"  content="text/html charset=UTF-8" />
+<body>
+	<h1 align="center">Votaciones de la reunion</h1></body>
+	<input type="checkbox" id="cbxW" onclick="myFunction()"> Persona W<br>
+	<input type="checkbox" id="cbxX" onclick="myFunction()"> Persona X<br>
+	<input type="checkbox" id="cbxY" onclick="myFunction()"> Persona Y<br>
+	<input type="checkbox" id="cbxZ" onclick="myFunction()"> Persona Z<br>
+	<p id="textX" style="display:none">Checkbox X is CHECKED!</p>
+	<p id="textY" style="display:none">Checkbox Y is CHECKED!</p>
+	<p id="textZ" style="display:none">Checkbox Z is CHECKED!</p>
+	<p id="textW" style="display:none">Checkbox W is CHECKED!</p>
+	<script>
+		function myFunction() {
+			// Get the checkbox
+			var checkBox = document.getElementById("cbxW");
+			// Get the output text
+			var text = document.getElementById("textW");
+
+			// If the checkbox is checked, display the output text
+			if (checkBox.checked == true){
+				text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+			// Get the checkbox
+			checkBox = document.getElementById("cbxX");
+			// Get the output text
+			text = document.getElementById("textX");
+
+			// If the checkbox is checked, display the output text
+			if (checkBox.checked == true){
+				text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+			// Get the checkbox
+			checkBox = document.getElementById("cbxY");
+			// Get the output text
+			text = document.getElementById("textY");
+
+			// If the checkbox is checked, display the output text
+			if (checkBox.checked == true){
+				text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+			// Get the checkbox
+			checkBox = document.getElementById("cbxZ");
+			// Get the output text
+			text = document.getElementById("textZ");
+
+			// If the checkbox is checked, display the output text
+			if (checkBox.checked == true){
+				text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+		}
+	</script>
+</body>
