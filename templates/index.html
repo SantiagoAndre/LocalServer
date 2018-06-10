@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+	{% from "_macro.html" import render_field %}
+
 	{% block titulo %}
 		<title>Flask con IOT</title>
 	{% endblock %}
@@ -127,11 +129,10 @@
 								<section>
 									<form method="post" action="#">
 										<div class="field half first">
-											<label for="name">Id Persona</label>
-											<input type="text" name="name" id="name" />
+											{{ render_field(form.id_persona) }}
 										</div>
 										<div class="6u$ 12u$(small)">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
+											<input type="checkbox" id="demo-human" name="votar">
 											<label for="demo-human">¿Está de acuerdo?</label>
 										</div>
 										<ul class="actions">
